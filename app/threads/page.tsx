@@ -37,6 +37,7 @@ export default function Threads() {
               delay: 0.5,
               onComplete: () => {
                 setStep("idle");
+                playbackRef.current = null;
               },
             });
           },
